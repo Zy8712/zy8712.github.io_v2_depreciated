@@ -1,0 +1,295 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root{
+    /*--color-body: #b6cbce; /* grayish blue */                     /* og */
+    --color-body: #ffffff; /* white */
+    --color-heading: #eef3db; /* baige */                           /* og */
+    --color-base: #033f47; /* slightly brighter blue green */       /* og */
+    /*--color-base: #198a99 */ /* slight dark blue */
+    --color-base2: #022a30; /* dark blue green */                   /* og */
+    --color-brand: #e0f780; /* slightly less bright yellow green */ /* og */
+    --color-brand2: #deff58; /* bright yellow green */              /* og */
+    --color-body-bright: white;
+    --sidebar-width: 220px;
+    --font-base: "Bai Jamjuree";                                    /* og */
+}
+
+body{
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+
+a:hover{
+  color: var(--color-brand);
+}
+
+img{
+  width: 100%;
+}
+
+.text-brand{
+  color: var(--color-brand);
+}
+
+.bg-base{
+  background: var(--color-base);
+  /* color base: #033f47 is the same as (3, 63, 71)*/
+  /*background: rgba(3, 63, 71, 0.5);*/
+}
+
+.bg-base2{
+  background: rgba(7, 152, 171, 0.4);
+}
+
+.full-height{
+  min-height: 100vh;
+  height: 100%;
+  /* center the content of the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.home-background{
+  background-image: url(../images/526200.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tools-background{
+  background-image: url(../images/565989.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-background{
+  background-image: url(../images/888980.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-background{
+  background-image: url(../images/1217194.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.index-experience-background{
+  background-image: url(../images/zoltan-tasi-HQPJEEjHqSE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.shadow-effect{
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover{
+  /*background: rgba(3, 63, 71, 1);*/
+  box-shadow: -6px 6px 0 0 var(--color-brand); /* from the x-axis -6 pixel, from the y-axis*/
+}
+
+.iconbox{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: rgba(39, 49, 56);
+  /* background-color: rgb(7, 152, 171); */
+  /* background-color: var(--color-brand); */
+  color: var(--color-base);
+}
+
+/* NAVBAR */
+
+/* Navbar class when window size is small */
+.navbar{
+  background: linear-gradient(rgba(7, 152, 171, 0.4), rgba(7, 152, 171, 0.4)), url(../images/background31.png); /* rgba = rgb + opacity */
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar .nav-link{
+  font-weight: 700;
+  text-transform: uppercase; /* text-transform - used to change everything to uppercase or lowercase*/
+  color: white;
+}
+
+.navbar .nav-link:hover{
+  color: var(--color-brand);
+}
+
+/* changes color of text/link in navbar to active page, e.g. services text highlighted when in services section */
+/* works together with scrollspy in body tag */
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+@media (min-width: 992px){ /* if browser window is equal to this or greater than, the following occurs */
+  /* Making the navbar a column with background image and opacity overlaying ontop of background image */
+  .navbar{
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    /* https://www.w3schools.com/colors/colors_picker.asp */
+    background: linear-gradient(rgba(7, 152, 171, 0.4), rgba(7, 152, 171, 0.4)), url(../images/background31.png); /* rgba = rgb + opacity */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Sets the border for the profile icon */
+  .navbar-brand img{
+    /* border: 8px solid var(--color-brand); */
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--color-brand);
+  }
+
+  .navbar2{
+    width: 50px;
+  }
+
+  .navbar-brand2{
+    width: 0%;
+    border-width: 0px;
+    border-style: none;
+    border-color: transparent;
+  }
+
+  .full-wrapper{
+    padding-left: var(--sidebar-width);
+  }
+
+  .content-change-wrapper{
+    padding-left: 50px;
+  }
+}
+
+.btn{
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+.btn-brand{
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+
+.link-custom{
+  font-weight: 700;
+  position: relative;
+}
+
+.link-custom::after{
+  content: "";
+  width: 0%; /* animate the underline */
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s; /* animate the underline */
+}
+
+/* animate the underline */
+.link-custom:hover::after{
+  width: 100%;
+}
+
+.translucent-card{
+  opacity: 0.5;
+}
+
+
+/* SETTINGS INCLUSIVE TO PROJECT & BLOG SECTION */
+.card-custom .card-custom-image{
+  overflow: hidden;
+}
+
+.card-custom .card-custom-image img{
+  transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+  background-color: var(--color-base);
+  opacity: 0.5;
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
+}
+
+#minimize-navbar-button{
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 100px;
+  border-color: transparent;
+  font-size: 24px;
+  transition-delay: 0.1s; /* adds a delay between hovering over the button and the highlighting */
+}
+
+#minimize-navbar-button:hover{
+  border-color: rgba(7, 152, 171, 0.4);
+  background-color: rgba(7, 152, 171, 0.4);
+}

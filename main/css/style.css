@@ -91,6 +91,12 @@ img{
   background-position: center;
 }
 
+.index-skills-background{
+  background-image: url(../images/984392.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .index-experience-background{
   background-image: url(../images/zoltan-tasi-HQPJEEjHqSE-unsplash.jpg);
   background-size: cover;
@@ -115,7 +121,7 @@ img{
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  background-color: rgba(39, 49, 56);
+  background-color: rgb(39, 49, 56);
   /* background-color: rgb(7, 152, 171); */
   /* background-color: var(--color-brand); */
   color: var(--color-base);

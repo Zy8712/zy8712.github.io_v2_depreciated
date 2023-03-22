@@ -53,6 +53,13 @@ img{
 .bg-base2{
   background: rgba(7, 152, 171, 0.4);
 }
+/*
+.testing{
+  background: linear-gradient(rgba(7, 152, 171, 0.4), rgba(7, 152, 171, 0.4)), url(../images/background31.png); /* rgba = rgb + opacity */
+/*  background-size: cover;
+  background-position: center;
+} */
+
 
 .full-height{
   min-height: 100vh;
@@ -97,12 +104,17 @@ img{
   background-position: center;
 }
 
+.index-skills-background2{
+  background-image: url(../images/533958.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .index-experience-background{
   background-image: url(../images/zoltan-tasi-HQPJEEjHqSE-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
-
 
 
 .shadow-effect{
@@ -298,4 +310,29 @@ img{
 #minimize-navbar-button:hover{
   border-color: rgba(7, 152, 171, 0.4);
   background-color: rgba(7, 152, 171, 0.4);
+}
+
+#to_top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#to_top img{
+  width: 28px;
+  height: 28px;
+}
+
+#to_top:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

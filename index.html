@@ -12,7 +12,9 @@
   <link rel="stylesheet" type="text/css" href="./main/css/aos.css">
   <link rel="stylesheet" type="text/css" href="./main/css/line-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./main/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pjI1+7GlPIETBpPtcyldI3H8tq+3gMToXAQ2Mf0eLJJw1mIh35pO/xVL0gRx/pXoIHY3qF1fJg2dOFN1aTQ2VQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-pjI1+7GlPIETBpPtcyldI3H8tq+3gMToXAQ2Mf0eLJJw1mIh35pO/xVL0gRx/pXoIHY3qF1fJg2dOFN1aTQ2VQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
@@ -20,9 +22,12 @@
 based on scroll position to indicate which link is currently active in the viewport.
 https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
   <!-- //////////////////////////// -->
   <!-- //////// START OF NAVBAR CODE -->
   <!-- //////////////////////////// -->
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- fixed-top ensures that content is not pushed below it -->
     <div class="container flex-lg-column"> <!-- flex-lg-column changes nav to column format when window is large -->
       <button type="button" id="minimize-navbar-button" class="position-absolute top-0 start-0 d-none d-lg-block">
@@ -41,40 +46,48 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto flex-lg-column text-lg-center"> <!-- flex-lg-column changes nav to column format when window is large -->
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 1 -->
           <a class="nav-link" href="#home" title="" id="nav-option1">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 2 -->
           <a class="nav-link" href="#skills" title="" id="nav-option2">Skills</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 3 -->
           <a class="nav-link" href="#projects" title="" id="nav-option3">Projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 4 -->
           <a class="nav-link" href="#about" title="" id="nav-option4">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 5 -->
           <a class="nav-link" href="#tools" title="" id="nav-option5">Tools</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 6 -->
           <a class="nav-link" href="#blog" title="" id="nav-option6">Blog</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nav Bar Item 7 -->
           <a class="nav-link" href="#contact" title="" id="nav-option7">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<!-- /////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////// -->
 <!-- //////// END OF NAVBAR CODE -->
 <!-- //////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////// -->
 
 
+<!-- /////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////// -->
 <!-- //////// START OF MAIN CONTENT CODE -->
 <!-- //////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////// -->
 <div id="content-wrapper" class="full-wrapper">
+
+  <button onclick="topFunction()" id="to_top" title="Go back up">
+    <img src="./main/custom/onlinewebfonts_up_arrow.svg">
+  </button>
 
   <!-- //////////////////////////// -->
   <!-- //////// START OF HOMESCREEN CODE -->
@@ -86,6 +99,7 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
           <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">SPECIALIZED HONOURS GRADUATE</span> FROM YORK UNIVERSITY</h1>
           <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="150">Welcome to my personal portfolio website! My name is Bryan, pleased to meet you!</p>
           <a href="#projects" class="btn btn-brand me-3" data-aos="fade-up" data-aos-delay="300">Explore My Work</a> <!--me-3 margin end 3-->
+          <a href="#projects" class="btn btn-brand" data-aos="fade-up" data-aos-delay="300">Explore My Work</a> <!--me-3 margin end 3-->
         </div>
       </div>
     </div>
@@ -102,68 +116,110 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
     <div class="container">
       <div class="row pb-4" data-aos="fade-up">
         <div class="col-lg-8">
-          <h6 class="text-brand"><i class="fa-solid fa-house"></i>
-            SKILLS</h6>
+          <h6 class="text-brand">SKILLS</h6>
             <h1>Skillset For Which I Possess</h1>
           </div>
         </div>
 
-        <div class="row gy-4"> <!-- gy-4 add spacing to top and bottom on small screens-->
+        <div class="row gy-4"> <!-- gy-4 add spacing to top and bottom of boxes on small windows-->
 
-          <div class="col-md-2" data-aos="fade-up">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/svgrepo-java-coloured.svg" style="height:36px; width:36px">
+          <!-- col-lg-6 takes up six of the twelve columns in this main section -->
+          <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
+          <!-- see blog section for more details -->
+          <!-- this section itself will have twelve columns itself as well -->
+
+          <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+          <div class="col-lg-12 col-xl-6">
+            <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
+
+
+              <!-- col-md-4 takes up 4 columns in the twelve columns available in the Bootstrap grid format -->
+              <!-- note that this is 4 columns out of twelve in the 6 columns out of twelve that we previously used to split the page in half -->
+              <!-- essentially, split original twelve columns into two column sections of size six columns
+                  and each of these two columns have themselves twelve columns worth of space distribution
+                  to evenly split the columns amongst the three boxes in each they are given col-md-4 as their respective sizes -->
+              <!-- fades up quickly using AOS Library (first box to appear) -->
+              <!-- p-4 padding value of 4 out of the possible preset 5 established by Bootstrap -->
+              <!---->
+
+              <!-- Java Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/svgrepo-java-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Java</a></h5>
+                </div>
               </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">Java</a></h5>
+
+              <!-- Python Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-python-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Python</a></h5>
+                </div>
+              </div>
+
+              <!-- HTML Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-html5-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">HTML</a></h5>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-2" data-aos="fade-up" data-aos-delay="150">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/wikimedia-python-coloured.svg" style="height:36px; width:36px">
+
+          <!-- col-lg-6 takes up six of the twelve columns in this main section -->
+          <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
+          <!-- see blog section for more details -->
+          <!-- this section itself will have twelve columns itself as well -->
+          <div class="col-lg-12 col-xl-6">
+            <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
+
+              <!-- CSS Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-css3-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">CSS</a></h5>
+                </div>
               </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">Python</a></h5>
+
+              <!-- Javascript Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-javascript-coloured.svg" style="height:36px; width:44px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Javascript</a></h5>
+                </div>
+              </div>
+
+              <!-- Bootstrap Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="750">
+                <div class="p-4 bg-base rounded-4 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-bootstrap-coloured.svg" style="height:36px; width:44px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Bootstrap</a></h5>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/wikimedia-html5-coloured.svg" style="height:36px; width:36px">
-              </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">HTML</a></h5>
-            </div>
-          </div>
+        </div>
 
-          <div class="col-md-2" data-aos="fade-up" data-aos-delay="450">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/wikimedia-css3-coloured.svg" style="height:36px; width:36px">
-              </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">CSS</a></h5>
-            </div>
-          </div>
-
-          <div class="col-md-2" data-aos="fade-up" data-aos-delay="600">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/wikimedia-javascript-coloured.svg" style="height:36px; width:44px">
-              </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">Javascript</a></h5>
-            </div>
-          </div>
-
-          <div class="col-md-2" data-aos="fade-up" data-aos-delay="750">
-            <div class="p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-3">
-                <img src="./main/custom/wikimedia-bootstrap-coloured.svg" style="height:36px; width:44px">
-              </div>
-              <h5 class="mt-4 mb-2"><a href="" class="link-custom">Bootstrap</a></h5>
-            </div>
-          </div>
-
+        <!-- Back button in its own row independent of all other skills buttons -->
+        <!-- row div containing back button given a top margin of 4, mt-4, so it doesn't overlap skills blocks -->
+        <div class="row mt-4">
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-content p-3">
@@ -171,7 +227,6 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -217,8 +272,8 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
               <div class="card-custom-content p-4">
                 <h4>Portfolio Website Built using Bootstrap</h4>
                 <p></p>
-                <a href="" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
-                <a href="" class="link-custom"><i class="las la-link"></i> Website Link</a>
+                <a href="https://github.com/Zy8712/zy8712.github.io" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
+                <a href="https://zy8712.github.io/" class="link-custom"><i class="las la-link"></i> Website Link</a>
               </div>
             </div>
           </div>
@@ -282,6 +337,7 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
         <div class="row gy-5">
 
           <div class="col-lg-6">
+
             <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-university"></i> Education</h3>
             <div class="row gy-4">
 
@@ -314,7 +370,9 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
             </div>
           </div>
 
+
           <div class="col-lg-6">
+
             <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-briefcase"></i> Work Experience</h3>
             <div class="row gy-4">
 
@@ -354,6 +412,7 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
                     </p>
                   </div>
                 </div>
+
               </div>
 
             </div>
@@ -629,21 +688,21 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-            <form action="#" class="row g-lg-3 gy-3">
+            <form id="contact-form" method="POST" action="" class="row g-lg-3 gy-3">
               <div class="form-group col-md-6">
-                <input type="text" class="form-control" placeholder="Enter your name">
+                <input type="text" class="form-control" placeholder="Enter your name" name="name" required>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" placeholder="Enter your email">
+                <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
               </div>
               <div class="form-group col-12">
-                <input type="text" class="form-control" placeholder="Enter subject">
+                <input type="text" class="form-control" placeholder="Enter a subject line" name="subject_line" required>
               </div>
               <div class="form-group col-12">
-                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                <textarea name="message" rows="4" class="form-control" placeholder="Write your message here" required></textarea>
               </div>
               <div class="form-group col-12 d-grid">
-                <button type="submit" class="btn btn-brand">Contact me</button>
+                <button type="submit" class="btn btn-brand">Send Message</button>
               </div>
             </form>
           </div>
@@ -660,8 +719,8 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
     <!-- //////////////////////////// -->
     <!-- //////// START OF FOOTER CODE -->
     <!-- //////////////////////////// -->
-    <footer class="py-4 px-lg-5"> <!-- py-5-->
-      <div class="container">
+    <footer class="py-4 px-lg-5 mb-0"> <!-- py-5-->
+      <div class="container mb-0">
 
         <!-- justify-content-between adds spacing between the credits box and the socials box -->
         <div class="row gy-4 justify-content-between" style="border: 2px solid black">

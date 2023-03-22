@@ -17,11 +17,17 @@ AOS.init({
 });
 
 var navbar_minimized = false;
+let top_page_button = document.getElementById("to_top");
+
 window.onload = function(){
   var minimize_button = $("minimize-navbar-button");
   minimize_button.observe("click", changeNavBar); // can use .observe or .addEventListener
 
   window.addEventListener("resize", checkNavBarText);
+}
+
+window.onscroll = function(){
+  scrollFunction();
 }
 
 function changeNavBar(){
@@ -33,6 +39,7 @@ function changeNavBar(){
     $("nav-option5").innerHTML = "T";
     $("nav-option6").innerHTML = "B";
     $("nav-option7").innerHTML = "C";
+
 
     $("nav-option1").title = "Home";
     $("nav-option2").title = "Skills";
@@ -109,5 +116,16 @@ function checkNavBarText(){
     $("nav-option6").title = "Blog";
     $("nav-option7").title = "Contact";
   }
+}
 
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800){
+    top_page_button.style.display = "block";
+  } else {
+    top_page_button.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

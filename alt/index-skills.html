@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bryan's Portfolio Site</title>
-  <!--<link rel="icon" type="image/x-icon" href="./main/images/pngegg.png">-->
   <link rel="icon" type="image/x-icon" href="../main/images/pngegg3.png"> <!-- Add Browser Icon -->
 
   <link rel="stylesheet" type="text/css" href="../main/css/bootstrap.min.css">
@@ -13,7 +12,8 @@
   <link rel="stylesheet" type="text/css" href="../main/css/line-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../main/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pjI1+7GlPIETBpPtcyldI3H8tq+3gMToXAQ2Mf0eLJJw1mIh35pO/xVL0gRx/pXoIHY3qF1fJg2dOFN1aTQ2VQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" type="text/css" href="../main/css/index-skill-highchart.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 
 <!-- Scrollspy. Automatically update Bootstrap navigation or list group components
@@ -454,6 +454,27 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
     <!-- //////// END OF SKILLS CODE -->
     <!-- //////////////////////////// -->
 
+    <section id="skills" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="100" >
+            <div class="card-custom rounded-4 bg-base shadow-effect"  style="background: url(../main/images/background31.png)">
+              <div class="card-custom-content p-3">
+                <figure class="highcharts-figure">
+                  <div id="container"></div>
+                  <p class="highcharts-description">
+                    Bar chart showing horizontal columns. This chart type is often
+                    beneficial for smaller screens, as the user can scroll through the data
+                    vertically, and axis labels are easy to read.
+                  </p>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
     <!-- //////////////////////////// -->
@@ -495,5 +516,10 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
   <script type="text/javascript" src="../main/js/aos.js"></script>
   <script type="text/javascript" src="../main/js/main.js"></script>
   <script type="text/javascript" src="../main/js/prototype.js"></script>
+  <script src="../Highcharts-10.3.3/code/highcharts.js"></script>
+  <script src="../Highcharts-10.3.3/code/modules/exporting.js"></script>
+  <script src="../Highcharts-10.3.3/code/modules/export-data.js"></script>
+  <script src="../Highcharts-10.3.3/code/modules/accessibility.js"></script>
+  <script type="text/javascript" src="../main/js/index-skills-highchart.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+
+.java-box-background{
+  background-image: url(../images/peakpx-moonlightmountain.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.python-box-background{
+  background-image: url(../images/peakpx-arctic.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.html-box-background{
+  background-image: url(../images/peakpx.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.css-box-background{
+  background-image: url(../images/peakpx-mountain.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.javascript-box-background{
+  background-image: url(../images/peakpx-rocket.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}

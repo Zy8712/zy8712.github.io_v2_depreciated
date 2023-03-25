@@ -124,6 +124,7 @@ img{
 .shadow-effect:hover{
   /*background: rgba(3, 63, 71, 1);*/
   box-shadow: -6px 6px 0 0 var(--color-brand); /* from the x-axis -6 pixel, from the y-axis*/
+  opacity: 1;
 }
 
 .iconbox{
@@ -133,7 +134,7 @@ img{
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  background-color: rgb(39, 49, 56);
+  background-color: rgba(39, 49, 56, 0.7  );
   /* background-color: rgb(7, 152, 171); */
   /* background-color: var(--color-brand); */
   color: var(--color-base);
@@ -312,6 +313,11 @@ img{
   background-color: rgba(7, 152, 171, 0.4);
 }
 
+
+/*////////////////////////////////*/
+/* BACK TO TOP BUTTON ON MAIN PAGE*/
+/*////////////////////////////////*/
+
 #to_top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -329,8 +335,8 @@ img{
 }
 
 #to_top img{
-  width: 28px;
-  height: 28px;
+  width: 28px; /* set width of image which also affects size of button */
+  height: 28px; /* set height of image which also affects size of button */
 }
 
 #to_top:hover {

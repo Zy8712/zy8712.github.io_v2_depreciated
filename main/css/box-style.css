@@ -3,32 +3,117 @@
   background-image: url(../images/peakpx-moonlightmountain.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .python-box-background{
   background-image: url(../images/peakpx-arctic.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .html-box-background{
   background-image: url(../images/peakpx.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .css-box-background{
   background-image: url(../images/peakpx-mountain.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .javascript-box-background{
   background-image: url(../images/peakpx-rocket.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.bootstrap-box-background{
+  background-image: url(../images/peakpx-citiscape.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.cplus-box-background{
+  background-image: url(../images/peakpx-river.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.c-box-background{
+  background-image: url(../images/peakpx-colourfulsun.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.fortran-box-background{
+  background-image: url(../images/peakpx-sunrise.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.matlab-box-background{
+  background-image: url(../images/peakpx-coastal.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.markdown-box-background{
+  background-image: url(../images/peakpx-pirateship.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.assembly-box-background{
+  background-image: url(../images/peakpx-fishing.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.verilog-box-background{
+  background-image: url(../images/peakpx-crevas.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.json-box-background{
+  background-image: url(../images/peakpx-redcity.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.jquery-box-background{
+  background-image: url(../images/peakpx-goldmoon.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.workingon-box-background{
+  background-image: url(../images/peakpx-iceberg.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+
+.see-more-background{
+  background-image: url(../images/peakpx-clouds.jpg);
   background-size: cover;
   background-position: center;
   opacity: 0.6;

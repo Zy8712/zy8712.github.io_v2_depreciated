@@ -21,12 +21,12 @@
 based on scroll position to indicate which link is currently active in the viewport.
 https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+
   <!-- /////////////////////////////////////////////////////////////////////////// -->
   <!-- //////////////////////////// -->
   <!-- //////// START OF NAVBAR CODE -->
   <!-- //////////////////////////// -->
   <!-- /////////////////////////////////////////////////////////////////////////// -->
-
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- fixed-top ensures that content is not pushed below it -->
     <div class="container flex-lg-column"> <!-- flex-lg-column changes nav to column format when window is large -->
 
@@ -40,766 +40,798 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
         <img src="./main/images/profile_pic.jpg" class="d-none d-lg-block rounded-circle" id="profile_icon" alt="profile_pic">
       </a>
       <!-- code for dropdown menu when window size is small -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center"> <!-- flex-lg-column changes nav to column format when window is large -->
+          <li class="nav-item"> <!-- Nav Bar Item 1 -->
+            <a class="nav-link" href="#home" title="" id="nav-option1">Home</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 2 -->
+            <a class="nav-link" href="#intro" title="" id="nav-option1-1">Intro</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 3 -->
+            <a class="nav-link" href="#skills" title="" id="nav-option2">Skills</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 4 -->
+            <a class="nav-link" href="#projects" title="" id="nav-option3">Projects</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 5 -->
+            <a class="nav-link" href="#about" title="" id="nav-option4">About</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 6 -->
+            <a class="nav-link" href="#tools" title="" id="nav-option5">Tools</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 7 -->
+            <a class="nav-link" href="#blog" title="" id="nav-option6">Blog</a>
+          </li>
+          <li class="nav-item"> <!-- Nav Bar Item 8 -->
+            <a class="nav-link" href="#contact" title="" id="nav-option7">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////// -->
+  <!-- //////// END OF NAVBAR CODE -->
+  <!-- //////////////////////////// -->
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////// -->
+  <!-- //////// START OF MAIN CONTENT CODE -->
+  <!-- //////////////////////////// -->
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+  <div id="content-wrapper" class="full-wrapper">
+
+    <button onclick="topFunction()" id="to_top" title="Go back up">
+      <img src="./main/custom/onlinewebfonts_up_arrow.svg">
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto flex-lg-column text-lg-center"> <!-- flex-lg-column changes nav to column format when window is large -->
-        <li class="nav-item"> <!-- Nav Bar Item 1 -->
-          <a class="nav-link" href="#home" title="" id="nav-option1">Home</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 2 -->
-          <a class="nav-link" href="#intro" title="" id="nav-option1-1">Intro</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 3 -->
-          <a class="nav-link" href="#skills" title="" id="nav-option2">Skills</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 4 -->
-          <a class="nav-link" href="#projects" title="" id="nav-option3">Projects</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 5 -->
-          <a class="nav-link" href="#about" title="" id="nav-option4">About</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 6 -->
-          <a class="nav-link" href="#tools" title="" id="nav-option5">Tools</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 7 -->
-          <a class="nav-link" href="#blog" title="" id="nav-option6">Blog</a>
-        </li>
-        <li class="nav-item"> <!-- Nav Bar Item 8 -->
-          <a class="nav-link" href="#contact" title="" id="nav-option7">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////// -->
-<!-- //////// END OF NAVBAR CODE -->
-<!-- //////////////////////////// -->
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-
-
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////// -->
-<!-- //////// START OF MAIN CONTENT CODE -->
-<!-- //////////////////////////// -->
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-<div id="content-wrapper" class="full-wrapper">
-
-  <button onclick="topFunction()" id="to_top" title="Go back up">
-    <img src="./main/custom/onlinewebfonts_up_arrow.svg">
-  </button>
-
-  <!-- //////////////////////////// -->
-  <!-- //////// START OF HOMESCREEN CODE -->
-  <!-- //////////////////////////// -->
-  <section id="home" class="full-height px-lg-5 home-background"> <!-- px-lg-5 adds padding to content-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">SPECIALIZED HONOURS GRADUATE</span> FROM YORK UNIVERSITY</h1>
-          <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="150" style="color:black">Welcome to my personal portfolio website! My name is Bryan, pleased to meet you!</p>
-          <a href="#projects" class="btn btn-brand me-3" data-aos="fade-up" data-aos-delay="300">Explore My Work</a> <!--me-3 margin end 3-->
-          <a href="#projects" class="btn btn-brand" data-aos="fade-up" data-aos-delay="300">View My Experience</a> <!--me-3 margin end 3-->
+    <!-- //////////////////////////// -->
+    <!-- //////// START OF HOMESCREEN CODE -->
+    <!-- //////////////////////////// -->
+    <section id="home" class="full-height px-lg-5 home-background"> <!-- px-lg-5 adds padding to content-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">SPECIALIZED HONOURS GRADUATE</span> FROM YORK UNIVERSITY</h1>
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="150" style="color:black">Welcome to my personal portfolio website! My name is Bryan, pleased to meet you!</p>
+            <a href="#projects" class="btn btn-brand me-3" data-aos="fade-up" data-aos-delay="300">Explore My Work</a> <!--me-3 margin end 3-->
+            <a href="#projects" class="btn btn-brand" data-aos="fade-up" data-aos-delay="300">View My Experience</a> <!--me-3 margin end 3-->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- //////////////////////////// -->
-  <!-- //////// END OF HOMESCREEN CODE -->
-  <!-- //////////////////////////// -->
+    </section>
+    <!-- //////////////////////////// -->
+    <!-- //////// END OF HOMESCREEN CODE -->
+    <!-- //////////////////////////// -->
 
 
-<section id="intro" class="full-height px-lg-5 home-background">
-
-</section>
-
-
-
-
-  <!-- //////////////////////////// -->
-  <!-- //////// START OF SKILLS CODE -->
-  <!-- //////////////////////////// -->
-  <section id="skills" class="full-height px-lg-5 home-background">
-
-    <div class="container">
-      <div class="row pb-4" data-aos="fade-up">
-        <div class="col-lg-8">
-          <h6 class="text-brand">SKILLS</h6>
-          <h1>Skillset For Which I Possess</h1>
+    <!-- //////////////////////////// -->
+    <!-- //////// START OF INTRO CODE -->
+    <!-- //////////////////////////// -->
+    <section id="intro" class="full-height px-lg-5 home-background">
+      <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">INTRODUCTION</h6>
+            <h1>A Brief Introduction About Myself</h1>
+          </div>
         </div>
-      </div>
 
-      <div class="row gy-4"> <!-- gy-4 add spacing to top and bottom of boxes on small windows-->
-
-        <!-- col-lg-6 takes up six of the twelve columns in this main section -->
-        <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
-        <!-- see blog section for more details -->
-        <!-- this section itself will have twelve columns itself as well -->
-
-        <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
-        <div class="col-lg-12 col-xl-6">
-          <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
-
-
-            <!-- col-md-4 takes up 4 columns in the twelve columns available in the Bootstrap grid format -->
-            <!-- note that this is 4 columns out of twelve in the 6 columns out of twelve that we previously used to split the page in half -->
-            <!-- essentially, split original twelve columns into two column sections of size six columns
-            and each of these two columns have themselves twelve columns worth of space distribution
-            to evenly split the columns amongst the three boxes in each they are given col-md-4 as their respective sizes -->
-            <!-- fades up quickly using AOS Library (first box to appear) -->
-            <!-- p-4 padding value of 4 out of the possible preset 5 established by Bootstrap -->
-            <!---->
-
-            <!-- Java Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up">
-              <div class="p-4 bg-base rounded-4 shadow-effect java-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/svgrepo-java-coloured.svg" style="height:36px; width:36px">
-                </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">Java</a></h5>
-              </div>
-            </div>
-
-            <!-- Python Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-              <div class="p-4 bg-base rounded-4 shadow-effect python-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/wikimedia-python-coloured.svg" style="height:36px; width:36px">
-                </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">Python</a></h5>
-              </div>
-            </div>
-
-            <!-- HTML Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="p-4 bg-base rounded-4 shadow-effect html-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/wikimedia-html5-coloured.svg" style="height:36px; width:36px">
-                </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">HTML</a></h5>
-              </div>
-            </div>
-
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 intro-paragraph">
+            <p>A recently graduated Computer Science student with an excellent understanding of various
+              industry-standard programming languages, platforms, frameworks, design techniques and tools.
+              Using my strong communication and teamwork skills I have been able to successfully complete
+              and achieve the goals laid out before me in various group projects. I am also a creative and
+              analytical thinker capable of working under pressure in fast-paced environments where flexibility
+              is required. I would also consider myself to be a passionate learner, constantly looking for
+              opportunities to learn new things and gain more experience. This also works together with my
+              tendency to plan ahead while also operating using a “work smarter” mentality.
+            </p>
+          </div>
+          <div class="col-lg-6 vert-center pt-4">
+            <img src="./main/images/York-University-sign.png" class="rounded-4">
+          </div>
+          <div class="col-lg-6 vert-center pt-4">
+            <img src="./main/images/Bergeron-Exterior-1-1024x683.jpg" class="rounded-4">
           </div>
         </div>
 
 
-        <!-- col-lg-6 takes up six of the twelve columns in this main section -->
-        <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
-        <!-- see blog section for more details -->
-        <!-- this section itself will have twelve columns itself as well -->
-        <div class="col-lg-12 col-xl-6">
-          <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
+      </div>
+    </section>
+    <!-- //////////////////////////// -->
+    <!-- //////// END OF INTRO CODE -->
+    <!-- //////////////////////////// -->
 
-            <!-- CSS Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
-              <div class="p-4 bg-base rounded-4 shadow-effect css-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/wikimedia-css3-coloured.svg" style="height:36px; width:36px">
+
+    <!-- //////////////////////////// -->
+    <!-- //////// START OF SKILLS CODE -->
+    <!-- //////////////////////////// -->
+    <section id="skills" class="full-height px-lg-5 home-background">
+
+      <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">SKILLS</h6>
+            <h1>Skillset For Which I Possess</h1>
+          </div>
+        </div>
+
+        <div class="row gy-4"> <!-- gy-4 add spacing to top and bottom of boxes on small windows-->
+
+          <!-- col-lg-6 takes up six of the twelve columns in this main section -->
+          <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
+          <!-- see blog section for more details -->
+          <!-- this section itself will have twelve columns itself as well -->
+
+          <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+          <div class="col-lg-12 col-xl-6">
+            <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
+
+
+              <!-- col-md-4 takes up 4 columns in the twelve columns available in the Bootstrap grid format -->
+              <!-- note that this is 4 columns out of twelve in the 6 columns out of twelve that we previously used to split the page in half -->
+              <!-- essentially, split original twelve columns into two column sections of size six columns
+              and each of these two columns have themselves twelve columns worth of space distribution
+              to evenly split the columns amongst the three boxes in each they are given col-md-4 as their respective sizes -->
+              <!-- fades up quickly using AOS Library (first box to appear) -->
+              <!-- p-4 padding value of 4 out of the possible preset 5 established by Bootstrap -->
+              <!---->
+
+              <!-- Java Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up">
+                <div class="p-4 bg-base rounded-4 shadow-effect java-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/svgrepo-java-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Java</a></h5>
                 </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">CSS</a></h5>
+              </div>
+
+              <!-- Python Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="p-4 bg-base rounded-4 shadow-effect python-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-python-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Python</a></h5>
+                </div>
+              </div>
+
+              <!-- HTML Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-4 bg-base rounded-4 shadow-effect html-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-html5-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">HTML</a></h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- col-lg-6 takes up six of the twelve columns in this main section -->
+          <!-- essentially used to split page in half so page is more dynamic for different window sizes -->
+          <!-- see blog section for more details -->
+          <!-- this section itself will have twelve columns itself as well -->
+          <div class="col-lg-12 col-xl-6">
+            <div class="row gy-4"> <!-- make divs arrange in row layout, gy-5 adds spacing to top and bottom of boxes on small windows -->
+
+              <!-- CSS Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
+                <div class="p-4 bg-base rounded-4 shadow-effect css-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-css3-coloured.svg" style="height:36px; width:36px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">CSS</a></h5>
+                </div>
+              </div>
+
+              <!-- Javascript Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="p-4 bg-base rounded-4 shadow-effect javascript-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-javascript-coloured.svg" style="height:36px; width:44px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Javascript</a></h5>
+                </div>
+              </div>
+
+              <!-- Bootstrap Skills Box (Main Page) -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="750">
+                <div class="p-4 bg-base rounded-4 shadow-effect bootstrap-box-background">
+                  <div class="iconbox rounded-3">
+                    <img src="./main/custom/wikimedia-bootstrap-coloured.svg" style="height:36px; width:44px">
+                  </div>
+                  <h5 class="mt-4 mb-2"><a href="" class="link-custom">Bootstrap</a></h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Back button in its own row independent of all other skills buttons -->
+        <!-- row div containing back button given a top margin of 4, mt-4, so it doesn't overlap skills blocks -->
+        <div class="row mt-4">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom rounded-4 bg-base shadow-effect see-more-background">
+              <div class="card-custom-content p-3">
+                <h4><a href="./alt/index-skills.html" class="link-custom">View All Skills <i class="las la-arrow-circle-right"></i></a></h4>
               </div>
             </div>
-
-            <!-- Javascript Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="p-4 bg-base rounded-4 shadow-effect javascript-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/wikimedia-javascript-coloured.svg" style="height:36px; width:44px">
-                </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">Javascript</a></h5>
-              </div>
-            </div>
-
-            <!-- Bootstrap Skills Box (Main Page) -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="750">
-              <div class="p-4 bg-base rounded-4 shadow-effect bootstrap-box-background">
-                <div class="iconbox rounded-3">
-                  <img src="./main/custom/wikimedia-bootstrap-coloured.svg" style="height:36px; width:44px">
-                </div>
-                <h5 class="mt-4 mb-2"><a href="" class="link-custom">Bootstrap</a></h5>
-              </div>
-            </div>
-
           </div>
         </div>
 
       </div>
-
-      <!-- Back button in its own row independent of all other skills buttons -->
-      <!-- row div containing back button given a top margin of 4, mt-4, so it doesn't overlap skills blocks -->
-      <div class="row mt-4">
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-custom rounded-4 bg-base shadow-effect see-more-background">
-            <div class="card-custom-content p-3">
-              <h4><a href="./alt/index-skills.html" class="link-custom">View All Skills <i class="las la-arrow-circle-right"></i></a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- //////////////////////////// -->
-  <!-- //////// END OF SKILLS CODE -->
-  <!-- //////////////////////////// -->
+    </section>
+    <!-- //////////////////////////// -->
+    <!-- //////// END OF SKILLS CODE -->
+    <!-- //////////////////////////// -->
 
 
-  <!-- //////////////////////////// -->
-  <!-- //////// START OF WORK CODE -->
-  <!-- //////////////////////////// -->
-  <section id="projects" class="full-height px-lg-5 home-background">
-    <div class="container">
+    <!-- //////////////////////////// -->
+    <!-- //////// START OF WORK CODE -->
+    <!-- //////////////////////////// -->
+    <section id="projects" class="full-height px-lg-5 home-background">
+      <div class="container">
 
-      <div class="row pb-4" data-aos="fade-up">
-        <div class="col-lg-8">
-          <h6 class="text-brand">PROJECTS</h6>
-          <h1>My Recent Noteworthy Projects</h1>
-        </div>
-      </div>
-
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <div class="row gy-4">
-
-
-            <div class="col-md-12"  data-aos="fade-up">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img class="rounded-4" src="./main/images/connect_four.jpg" alt="">
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Connect 4 w/ AI Implementation</h4>
-                  <p>University Project which involves the game of connect four and an AI algorithm serving as your opponent. The opposing AI algorithm has various levels of difficulty which can be selected by the user.</p>
-                  <a href="https://github.com/Zy8712/Connect-4-Using-Artificial-Intelligence" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repository</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12" data-aos="fade-up">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img class="rounded-4" src="./main/images/leetcode_profile.PNG" alt="">
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>LeetCode Practice</h4>
-                  <p>My answers for the various practice problems provided on LeetCode.com. Problems on the site are numbered and are each assigned a level of difficulty of Easy, Medium, and Hard.</p>
-                  <a href="https://github.com/Zy8712/LeetCode-Practice" target="_blank" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
-                  <a href="https://leetcode.com/Zy8712/" class="link-custom"><i class="las la-code"></i> LeetCode Profile</a>
-                </div>
-              </div>
-            </div>
-
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">PROJECTS</h6>
+            <h1>My Recent Noteworthy Projects</h1>
           </div>
         </div>
 
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
 
-        <div class="col-lg-6">
-          <div class="row gy-4">
 
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img class="rounded-4" src="./main/images/bootstrap-social.png" alt="">
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Personal Portfolio Website Ver. 2.0</h4>
-                  <p>My personal portfolio site, developed using HTML, CSS, and Javascript. With the incorporation of the Bootstrap framework
-                    and the AOS library, the result is a website that boasts a clean and dynamic design. This website serves as a successor
-                    to my previous portfolio site. </p>
-                    <a href="https://github.com/Zy8712/zy8712.github.io" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
-                    <a href="https://zy8712.github.io/" class="link-custom"><i class="las la-link"></i> Website Link</a>
+              <div class="col-md-12"  data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./main/images/connect_four.jpg" alt="">
+                  </div>
+                  <div class="card-custom-content p-4">
+                    <h4>Connect 4 w/ AI Implementation</h4>
+                    <p>University Project which involves the game of connect four and an AI algorithm serving as your opponent. The opposing AI algorithm has various levels of difficulty which can be selected by the user.</p>
+                    <a href="https://github.com/Zy8712/Connect-4-Using-Artificial-Intelligence" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repository</a>
                   </div>
                 </div>
               </div>
+
+              <div class="col-md-12" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./main/images/leetcode_profile.PNG" alt="">
+                  </div>
+                  <div class="card-custom-content p-4">
+                    <h4>LeetCode Practice</h4>
+                    <p>My answers for the various practice problems provided on LeetCode.com. Problems on the site are numbered and are each assigned a level of difficulty of Easy, Medium, and Hard.</p>
+                    <a href="https://github.com/Zy8712/LeetCode-Practice" target="_blank" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
+                    <a href="https://leetcode.com/Zy8712/" class="link-custom"><i class="las la-code"></i> LeetCode Profile</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <div class="row gy-4">
 
               <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-custom rounded-4 bg-base shadow-effect">
                   <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/twitter_phone.jpg" alt="">
+                    <img class="rounded-4" src="./main/images/bootstrap-social.png" alt="">
                   </div>
                   <div class="card-custom-content p-4">
-                    <h4>Tweet Extractor w/OpenAI API</h4>
-                    <p>Written in Python. Extracts tweets from a given Twitter handle and searches for deals/discounts mentioned using the OpenAI API.</p>
-                    <a href="https://github.com/Zy8712/Tweet-Extractor-Deal-Hunter" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repository</a>
+                    <h4>Personal Portfolio Website Ver. 2.0</h4>
+                    <p>My personal portfolio site, developed using HTML, CSS, and Javascript. With the incorporation of the Bootstrap framework
+                      and the AOS library, the result is a website that boasts a clean and dynamic design. This website serves as a successor
+                      to my previous portfolio site. </p>
+                      <a href="https://github.com/Zy8712/zy8712.github.io" class="link-custom me-5"><i class="lab la-github"></i> GitHub Repository</a>
+                      <a href="https://zy8712.github.io/" class="link-custom"><i class="las la-link"></i> Website Link</a>
+                    </div>
                   </div>
                 </div>
-              </div>
 
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/twitter_phone.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Tweet Extractor w/OpenAI API</h4>
+                      <p>Written in Python. Extracts tweets from a given Twitter handle and searches for deals/discounts mentioned using the OpenAI API.</p>
+                      <a href="https://github.com/Zy8712/Tweet-Extractor-Deal-Hunter" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
 
-        <div class="row gy-4 mt-3">
+          <div class="row gy-4 mt-3">
 
-          <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-content p-3">
-                <h4><a href="./alt/index-projects.html" class="link-custom">View All Archived Projects <i class="las la-arrow-circle-right"></i></a></h4>
+            <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect see-more-background">
+                <div class="card-custom-content p-3">
+                  <h4><a href="./alt/index-projects.html" class="link-custom">View All Archived Projects <i class="las la-arrow-circle-right"></i></a></h4>
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
-
-      </div>
-    </section>
-    <!-- //////////////////////////// -->
-    <!-- //////// END OF WORK CODE -->
-    <!-- //////////////////////////// -->
-
-
-    <!-- //////////////////////////// -->
-    <!-- //////// START OF ABOUT CODE -->
-    <!-- //////////////////////////// -->
-    <section id="about" class="full-height px-lg-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand">ABOUT</h6>
-            <h1>My Education & Experience</h1>
-          </div>
-        </div>
-
-        <div class="row gy-5">
-
-          <div class="col-lg-6">
-
-            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-university"></i> Education</h3>
-
-            <div class="row gy-4">
-
-              <div class="col-12">
-                <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4>Specialized Honours Bachelours in Computer Science (BSc)</h4>
-                    <p class="text-brand mb-2">York University (Sept 2018 - Aug 2022)</p>
-                    <p class="mb-0">testing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/bayview_secondary_edited.jpg" alt="">
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4>Ontario Secondary School (OSS) Diploma</h4>
-                    <p class="text-brand mb-2">Bayview Secondary (Sept 2014 - June 2018)</p>
-                    <p class="mb-0"></p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="col-lg-6">
-
-            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-briefcase"></i> Work Experience</h3>
-            <div class="row gy-4">
-
-              <div class="col-12">
-                <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
-                  <div class="card-custom-image rounded-4">
-                    <a href="https://www.mathnasium.ca/richmondhillnorth" target="_blank">
-                      <img class="rounded-4" src="./main/images/mathnasium_rhn_edit.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4>Math Instructor</h4>
-                    <p class="text-brand mb-2">Mathnasium Richmond Hill North (Oct 2022 - Present)</p>
-                    <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
-                      fill in gaps in our students current understanding of mathematics so they will have the necessary
-                      skills to succeed both in their current studies and have a strong foundation to work off of in their
-                      future studies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
-                  <div class="card-custom-image rounded-4">
-                    <a href="https://www.mathnasium.ca/thornhill" target="_blank">
-                      <img class="rounded-4" src="./main/images/mathnasium_th_edit.png" alt="">
-                    </a>
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4>Math Instructor</h4>
-                    <p class="text-brand mb-2">Mathnasium Thornhill (Oct 2022 - Present)</p>
-                    <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
-                      fill in gaps in our students current understanding of mathematics so they will have the necessary
-                      skills to succeed both in their current studies and have a strong foundation to work off of in their
-                      future studies.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
           </div>
 
         </div>
+      </section>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF WORK CODE -->
+      <!-- //////////////////////////// -->
 
 
-        <div class="row gy-4 mt-3">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-content p-3">
-                <h4><a href="./alt/index-experience.html" class="link-custom">View More Education & Experience <i class="las la-arrow-circle-right"></i></a></h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-    <!-- //////////////////////////// -->
-    <!-- //////// END OF ABOUT CODE -->
-    <!-- //////////////////////////// -->
-
-    <!-- //////////////////////////// -->
-    <!-- //////// START OF TOOLS CODE -->
-    <!-- //////////////////////////// -->
-    <section id="tools" class="full-height px-lg-5 tools-background">
-      <div class="container">
-
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand">TOOLS</h6>
-            <h1>The Tools I Use, Evrything I Use</h1>
-          </div>
-        </div>
-
-        <div class="row gy-4">
-
-
-          <div class="col-lg-12 col-xl-6">
-            <div class="row gy-4">
-
-              <div class="col-md-4" data-aos="fade-up">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
+      <!-- //////////////////////////// -->
+      <!-- //////// START OF ABOUT CODE -->
+      <!-- //////////////////////////// -->
+      <section id="about" class="full-height px-lg-5 experience-background">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT</h6>
+              <h1>My Education & Experience</h1>
             </div>
           </div>
 
+          <div class="row gy-5">
 
-          <div class="col-lg-12 col-xl-6">
-            <div class="row gy-4">
+            <div class="col-lg-6">
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-university"></i> Education</h3>
+
+              <div class="row gy-4">
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Specialized Honours Bachelours in Computer Science (BSc)</h4>
+                      <p class="text-brand mb-2">York University (Sept 2018 - Aug 2022)</p>
+                      <p class="mb-0">testing</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/bayview_secondary_edited.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Ontario Secondary School (OSS) Diploma</h4>
+                      <p class="text-brand mb-2">Bayview Secondary (Sept 2014 - June 2018)</p>
+                      <p class="mb-0"></p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-          <div class="col-lg-12 col-xl-6">
-            <div class="row gy-4">
-
-              <div class="col-md-4" data-aos="fade-up">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
               </div>
 
             </div>
+
+
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-briefcase"></i> Work Experience</h3>
+              <div class="row gy-4">
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <a href="https://www.mathnasium.ca/richmondhillnorth" target="_blank">
+                        <img class="rounded-4" src="./main/images/mathnasium_rhn_edit.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Math Instructor</h4>
+                      <p class="text-brand mb-2">Mathnasium Richmond Hill North (Oct 2022 - Present)</p>
+                      <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
+                        fill in gaps in our students current understanding of mathematics so they will have the necessary
+                        skills to succeed both in their current studies and have a strong foundation to work off of in their
+                        future studies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <a href="https://www.mathnasium.ca/thornhill" target="_blank">
+                        <img class="rounded-4" src="./main/images/mathnasium_th_edit.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Math Instructor</h4>
+                      <p class="text-brand mb-2">Mathnasium Thornhill (Oct 2022 - Present)</p>
+                      <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
+                        fill in gaps in our students current understanding of mathematics so they will have the necessary
+                        skills to succeed both in their current studies and have a strong foundation to work off of in their
+                        future studies.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
 
-          <div class="col-lg-12 col-xl-6">
-            <div class="row gy-4">
+          <div class="row gy-4 mt-3">
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect see-more-background">
+                <div class="card-custom-content p-3">
+                  <h4><a href="./alt/index-experience.html" class="link-custom">View More Education & Experience <i class="las la-arrow-circle-right"></i></a></h4>
                 </div>
               </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="card-custom review shadow-effect bg-base rounded-4">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
-                  </div>
-                  <div class="p-4">
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
+
 
         </div>
+      </section>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF ABOUT CODE -->
+      <!-- //////////////////////////// -->
 
-        <div class="row gy-4 mt-3">
+      <!-- //////////////////////////// -->
+      <!-- //////// START OF TOOLS CODE -->
+      <!-- //////////////////////////// -->
+      <section id="tools" class="full-height px-lg-5 tools-background">
+        <div class="container">
 
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-content p-3">
-                <h4><a href="./alt/index-tools.html" class="link-custom">View All Tools <i class="las la-arrow-circle-right"></i></a></h4>
-              </div>
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">TOOLS</h6>
+              <h1>The Tools I Use, Evrything I Use</h1>
             </div>
           </div>
 
-        </div>
+          <div class="row gy-4">
 
 
+            <div class="col-lg-12 col-xl-6">
+              <div class="row gy-4">
 
-      </div>
-    </section>
-    <!-- //////////////////////////// -->
-    <!-- //////// END OF REVIEWS CODE -->
-    <!-- //////////////////////////// -->
+                <div class="col-md-4" data-aos="fade-up">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
 
-    <!-- //////////////////////////// -->
-    <!-- //////// START OF BLOG CODE -->
-    <!-- //////////////////////////// -->
-    <section id="blog" class="full-height px-lg-5 blog-background">
-      <div class="container">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
 
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand">BLOG</h6>
-            <h1>Developmental Updates & Current Topics of Interest</h1>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 col-xl-6">
+              <div class="row gy-4">
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 col-xl-6">
+              <div class="row gy-4">
+
+                <div class="col-md-4" data-aos="fade-up">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 col-xl-6">
+              <div class="row gy-4">
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-custom review shadow-effect bg-base rounded-4">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="p-4">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
+
+          <div class="row gy-4 mt-3">
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-content p-3">
+                  <h4><a href="./alt/index-tools.html" class="link-custom">View All Tools <i class="las la-arrow-circle-right"></i></a></h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
         </div>
+      </section>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF REVIEWS CODE -->
+      <!-- //////////////////////////// -->
 
-        <div class="row gy-4">
+      <!-- //////////////////////////// -->
+      <!-- //////// START OF BLOG CODE -->
+      <!-- //////////////////////////// -->
+      <section id="blog" class="full-height px-lg-5 blog-background">
+        <div class="container">
 
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <p class="text-brand mb-2">Date 1</p>
-                <h5 class="mb-4">Blog Slot 1</h5>
-                <a href="#" class="link-custom">Link 1</a>
-              </div>
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">BLOG</h6>
+              <h1>Developmental Updates & Current Topics of Interest</h1>
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <p class="text-brand mb-2">Date 2</p>
-                <h5 class="mb-4">Blog Slot 2</h5>
-                <a href="#" class="link-custom">Link 2</a>
-              </div>
-            </div>
-          </div>
+          <div class="row gy-4">
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <p class="text-brand mb-2">Date 3</p>
-                <h5 class="mb-4">Blog Slot 3</h5>
-                <a href="#" class="link-custom">Link 3</a>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <p class="text-brand mb-2">Date 1</p>
+                  <h5 class="mb-4">Blog Slot 1</h5>
+                  <a href="#" class="link-custom">Link 1</a>
+                </div>
               </div>
             </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <p class="text-brand mb-2">Date 2</p>
+                  <h5 class="mb-4">Blog Slot 2</h5>
+                  <a href="#" class="link-custom">Link 2</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <p class="text-brand mb-2">Date 3</p>
+                  <h5 class="mb-4">Blog Slot 3</h5>
+                  <a href="#" class="link-custom">Link 3</a>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
+      </section>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF BLOG CODE -->
+      <!-- //////////////////////////// -->
 
-      </div>
-    </section>
-    <!-- //////////////////////////// -->
-    <!-- //////// END OF BLOG CODE -->
-    <!-- //////////////////////////// -->
+      <!-- //////////////////////////// -->
+      <!-- //////// START OF CONTACT CODE -->
+      <!-- //////////////////////////// -->
+      <section id="contact" class="full-height px-lg-5 contact-background">
+        <div class="container">
 
-    <!-- //////////////////////////// -->
-    <!-- //////// START OF CONTACT CODE -->
-    <!-- //////////////////////////// -->
-    <section id="contact" class="full-height px-lg-5 contact-background">
-      <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Interested in working together? Let's talk
+              </h1>
+            </div>
 
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8 pb-4" data-aos="fade-up">
-            <h6 class="text-brand">CONTACT</h6>
-            <h1>Interested in working together? Let's talk
-            </h1>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-            <form id="contact-form" method="POST" action="" class="row g-lg-3 gy-3">
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" placeholder="Enter your name" name="name" required>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
-              </div>
-              <div class="form-group col-12">
-                <input type="text" class="form-control" placeholder="Enter a subject line" name="subject_line" required>
-              </div>
-              <div class="form-group col-12">
-                <textarea name="message" rows="4" class="form-control" placeholder="Write your message here" required></textarea>
-              </div>
-              <div class="form-group col-12 d-grid">
-                <button type="submit" class="btn btn-brand">Send Message</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-    <!-- //////////////////////////// -->
-    <!-- //////// END OF CONTACT CODE -->
-    <!-- //////////////////////////// -->
-
-
-    <!-- //////////////////////////// -->
-    <!-- //////// START OF FOOTER CODE -->
-    <!-- //////////////////////////// -->
-    <footer class="py-4 px-lg-5 mb-0"> <!-- py-5-->
-      <div class="container mb-0">
-
-        <!-- justify-content-between adds spacing between the credits box and the socials box -->
-        <div class="row gy-4 justify-content-between" style="border: 2px solid black">
-
-          <div class="col-auto" style="border: 2px solid black">
-            <p class="mb-0">Full Site Credits: <a href="./alt/index-credits.html" class="fw-bold link-custom">HERE</a></p>
-          </div>
-
-          <div class="col-auto" style="border: 2px solid black">
-            <div class="social-icons">
-              <a href="https://github.com/Zy8712"><i class="lab la-github"></i></a>
-              <a href="https://www.linkedin.com/in/bryan-li-a15437250/"><i class="lab la-linkedin-in"></i></a>
-              <a href="https://leetcode.com/Zy8712/"><i class="las la-code"></i></a>
-              <a href="#"><i class="lab la-twitter"></i></a>
-              <a href="bryan.li71298@gmail.com"><i class="las la-envelope"></i></a>
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form id="contact-form" method="POST" action="" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" placeholder="Enter a subject line" name="subject_line" required>
+                </div>
+                <div class="form-group col-12">
+                  <textarea name="message" rows="4" class="form-control" placeholder="Write your message here" required></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <button type="submit" class="btn btn-brand">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
 
+
         </div>
-      </div>
-    </footer>
+      </section>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF CONTACT CODE -->
+      <!-- //////////////////////////// -->
+
+
+      <!-- //////////////////////////// -->
+      <!-- //////// START OF FOOTER CODE -->
+      <!-- //////////////////////////// -->
+      <footer class="py-4 px-lg-5 mb-0"> <!-- py-5-->
+        <div class="container mb-0">
+
+          <!-- justify-content-between adds spacing between the credits box and the socials box -->
+          <div class="row gy-4 justify-content-between">
+
+            <div class="col-auto my-site-cred">
+              <p class="mb-0">Full Site Credits: <a href="./alt/index-credits.html" class="fw-bold link-custom">HERE</a></p>
+            </div>
+
+            <div class="col-auto">
+              <div class="social-icons">
+                <a href="https://github.com/Zy8712"><i class="lab la-github"></i></a>
+                <a href="https://www.linkedin.com/in/bryan-li-a15437250/"><i class="lab la-linkedin-in"></i></a>
+                <a href="https://leetcode.com/Zy8712/"><i class="las la-code"></i></a>
+                <a href="#"><i class="lab la-twitter"></i></a>
+                <a href="bryan.li71298@gmail.com"><i class="las la-envelope"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <!-- //////////////////////////// -->
+      <!-- //////// END OF FOOTER CODE -->
+      <!-- //////////////////////////// -->
+
+    </div>
     <!-- //////////////////////////// -->
-    <!-- //////// END OF FOOTER CODE -->
+    <!-- //////// END OF MAIN CONTENT CODE -->
     <!-- //////////////////////////// -->
 
-  </div>
-  <!-- //////////////////////////// -->
-  <!-- //////// END OF MAIN CONTENT CODE -->
-  <!-- //////////////////////////// -->
-
-  <script type="text/javascript" src="./main/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="./main/js/aos.js"></script>
-  <script type="text/javascript" src="./main/js/main.js"></script>
-  <script type="text/javascript" src="./main/js/prototype.js"></script>
-</body>
-</html>
+    <script type="text/javascript" src="./main/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./main/js/aos.js"></script>
+    <script type="text/javascript" src="./main/js/main.js"></script>
+    <script type="text/javascript" src="./main/js/prototype.js"></script>
+  </body>
+  </html>

@@ -33,6 +33,7 @@ window.onscroll = function(){
 function changeNavBar(){
   if (navbar_minimized == false){
     $("nav-option1").innerHTML = "H";
+    $("nav-option1-1").innerHTML = "I";
     $("nav-option2").innerHTML = "S";
     $("nav-option3").innerHTML = "P";
     $("nav-option4").innerHTML = "A";
@@ -42,6 +43,7 @@ function changeNavBar(){
 
 
     $("nav-option1").title = "Home";
+    $("nav-option1-1").title = "Intro";
     $("nav-option2").title = "Skills";
     $("nav-option3").title = "Projects";
     $("nav-option4").title = "About";
@@ -56,6 +58,7 @@ function changeNavBar(){
   }
   else{
     $("nav-option1").innerHTML = "Home";
+    $("nav-option1-1").innerHTML = "Intro";
     $("nav-option2").innerHTML = "Skills";
     $("nav-option3").innerHTML = "Projects";
     $("nav-option4").innerHTML = "About";
@@ -64,6 +67,7 @@ function changeNavBar(){
     $("nav-option7").innerHTML = "Contact";
 
     $("nav-option1").title = "";
+    $("nav-option1-1").title = "";
     $("nav-option2").title = "";
     $("nav-option3").title = "";
     $("nav-option4").title = "";
@@ -84,6 +88,7 @@ function checkNavBarText(){
 
   if(w < 992 && navbar_minimized == true){
     $("nav-option1").innerHTML = "Home";
+    $("nav-option1-1").innerHTML = "Intro";
     $("nav-option2").innerHTML = "Skills";
     $("nav-option3").innerHTML = "Projects";
     $("nav-option4").innerHTML = "About";
@@ -92,6 +97,7 @@ function checkNavBarText(){
     $("nav-option7").innerHTML = "Contact";
 
     $("nav-option1").title = "";
+    $("nav-option1-1").title = "";
     $("nav-option2").title = "";
     $("nav-option3").title = "";
     $("nav-option4").title = "";
@@ -101,6 +107,7 @@ function checkNavBarText(){
   }
   else if (w >= 992 && navbar_minimized == true){
     $("nav-option1").innerHTML = "H";
+    $("nav-option1-1").innerHTML = "I";
     $("nav-option2").innerHTML = "S";
     $("nav-option3").innerHTML = "P";
     $("nav-option4").innerHTML = "A";
@@ -109,6 +116,7 @@ function checkNavBarText(){
     $("nav-option7").innerHTML = "C";
 
     $("nav-option1").title = "Home";
+    $("nav-option1-1").title = "Intro";
     $("nav-option2").title = "Skills";
     $("nav-option3").title = "Projects";
     $("nav-option4").title = "About";
